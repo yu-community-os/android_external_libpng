@@ -110,6 +110,7 @@ include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_CLANG := true
+LOCAL_SDCLANG_LTO := true
 LOCAL_SRC_FILES := $(common_SRC_FILES)
 LOCAL_SRC_FILES_arm := $(my_src_files_arm)
 LOCAL_SRC_FILES_arm64 := $(my_src_files_arm)
