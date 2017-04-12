@@ -1,4 +1,4 @@
-Any Android specific modifications to upstream libpng (1.6.25) should
+Any Android specific modifications to upstream libpng (1.6.22beta) should
 be listed here:
 
 (1) Android has added the following files.
@@ -15,13 +15,3 @@ be listed here:
 (3) Removed contrib/testpngs/
     There is no reason to check in all of these files if we won't
     be using them.
-
-(4) Applied the Intel SSE patch
-    Upstream places the patch for SSE support
-    in contrib/intel/intel_sse.patch.
-    The patch was applied using the following command:
-    'patch -i contrib/intel/intel_sse.patch -p1'
-
-(5) Revert ADLER32 error handling to fix the infinite loop
-Cherry picked from upstream:
-https://github.com/glennrp/libpng/commit/d65a92b951079d315e17e20ba9e7b8423d19397e
